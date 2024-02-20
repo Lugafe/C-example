@@ -7,7 +7,7 @@ void printTable(int valores[8][8]);
 int main()
 {
     int cavalo = (int)('k');    
-    int cont = 0;
+    int p = 0;
     int tabuleiro[8][8] = {
         {0, 0, 0, 0, 0, 0, 0, 0},
         {0, 0, 0, 0, 0, 0, 0, 0},
@@ -20,6 +20,19 @@ int main()
     };
     tabuleiro[3][4] = cavalo;
     posicoes(cavalo,tabuleiro);
+    printf("Digite o numero da posicao que deseja");
+    scanf("%d", p);    
+    do
+    {
+
+        if (p != -1)
+        {   
+           move(p); 
+           printf("Digite o numero da posicao que deseja");
+           scanf("%d", p); 
+        }
+        
+    } while (p != -1);
        
         
 
