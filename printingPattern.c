@@ -19,7 +19,7 @@ int main()
         }        
         r--;
     }
-    printTable(v,m);
+    printTable(v,&m);
     
     return 0;
 }
